@@ -1,0 +1,16 @@
+We will need:
+Condition object w/
+Initial x
+Initial y
+g (acceleration from gravity)
+Mass of ping pong ball
+Diameter of ping pong ball
+Air density (rho)
+C_d (drag coefficient)
+Launch angle
+Initial velocity
+
+Functions:
+make_system(condition) -> creates a system with the given condition that contains all of the initial values
+slope_func (state, t, system) -> this takes in the current position and velocity of the ping pong ball and returns a new velocity and position for the ping pong ball based off the FBD
+run_odeint(system, slope_func) -> this is a black box
